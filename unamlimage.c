@@ -121,8 +121,8 @@ int main(int argc, char *argv[]) {
 				file_type,
 				file.main_type,
 				file.sub_type,
-				file.img_offset,
-				file.size,
+				(unsigned long long)file.img_offset,
+				(unsigned long long)file.size,
 				file.verify ? "yes" : "no"
 			);
 		}
